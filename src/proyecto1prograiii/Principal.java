@@ -35,6 +35,10 @@ public class Principal extends javax.swing.JFrame {
         UpdateBTN = new javax.swing.JButton();
         EraseBTN = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,6 +59,11 @@ public class Principal extends javax.swing.JFrame {
 
         Verbtn.setText("Ver 👁️👁️");
         Verbtn.setPreferredSize(new java.awt.Dimension(72, 23));
+        Verbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerbtnActionPerformed(evt);
+            }
+        });
         jPanel1.add(Verbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 110, 100));
 
         UpdateBTN.setText("Actualizar ");
@@ -68,6 +77,29 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanel1.add(EraseBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 110, 100));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+
+        jMenu1.setText("File");
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ADD, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setText("Crear");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Cerrar ");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,6 +124,21 @@ public class Principal extends javax.swing.JFrame {
         CrearPersona cp = new CrearPersona (null, true);
         cp.setVisible(true);
     }//GEN-LAST:event_CreateBTNActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+       this.dispose();
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        CreateBTNActionPerformed(evt);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void VerbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerbtnActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_VerbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,6 +181,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton UpdateBTN;
     private javax.swing.JButton Verbtn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
