@@ -31,9 +31,8 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         CreateBTN = new javax.swing.JButton();
-        Verbtn = new javax.swing.JButton();
+        GestBTN = new javax.swing.JButton();
         UpdateBTN = new javax.swing.JButton();
-        EraseBTN = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -55,27 +54,24 @@ public class Principal extends javax.swing.JFrame {
                 CreateBTNActionPerformed(evt);
             }
         });
-        jPanel1.add(CreateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 110, 100));
+        jPanel1.add(CreateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 140, 100));
 
-        Verbtn.setText("Ver 👁️👁️");
-        Verbtn.setPreferredSize(new java.awt.Dimension(72, 23));
-        Verbtn.addActionListener(new java.awt.event.ActionListener() {
+        GestBTN.setText("Gestionar");
+        GestBTN.setPreferredSize(new java.awt.Dimension(72, 23));
+        GestBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VerbtnActionPerformed(evt);
+                GestBTNActionPerformed(evt);
             }
         });
-        jPanel1.add(Verbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 110, 100));
+        jPanel1.add(GestBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 140, 100));
 
-        UpdateBTN.setText("Actualizar ");
-        jPanel1.add(UpdateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 110, 100));
-
-        EraseBTN.setText("Eliminar 🗑️");
-        EraseBTN.addActionListener(new java.awt.event.ActionListener() {
+        UpdateBTN.setText("Administrar materias");
+        UpdateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EraseBTNActionPerformed(evt);
+                UpdateBTNActionPerformed(evt);
             }
         });
-        jPanel1.add(EraseBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 110, 100));
+        jPanel1.add(UpdateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, 100));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         jMenu1.setText("File");
@@ -115,10 +111,6 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void EraseBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EraseBTNActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_EraseBTNActionPerformed
-
     private void CreateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateBTNActionPerformed
         // TODO add your handling code here:
         CrearPersona cp = new CrearPersona (null, true);
@@ -127,7 +119,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
-       this.dispose();
+       System.exit(3);
     }//GEN-LAST:event_jMenu2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -135,10 +127,15 @@ public class Principal extends javax.swing.JFrame {
         CreateBTNActionPerformed(evt);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void VerbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerbtnActionPerformed
+    private void GestBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GestBTNActionPerformed
         // TODO add your handling code here:
-        
-    }//GEN-LAST:event_VerbtnActionPerformed
+        Gestion g = new Gestion (null,true);
+        g.setVisible(true);
+    }//GEN-LAST:event_GestBTNActionPerformed
+
+    private void UpdateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UpdateBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,9 +174,8 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CreateBTN;
-    private javax.swing.JButton EraseBTN;
+    private javax.swing.JButton GestBTN;
     private javax.swing.JButton UpdateBTN;
-    private javax.swing.JButton Verbtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
