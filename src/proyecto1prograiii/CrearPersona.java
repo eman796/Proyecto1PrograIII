@@ -4,9 +4,14 @@
  */
 package proyecto1prograiii;
 
+import java.awt.Color;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
 
 /**
  *
@@ -44,6 +49,12 @@ public class CrearPersona extends javax.swing.JDialog {
         jLabel18 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jComboBox2 = new javax.swing.JComboBox<>();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
         jPanelFondo = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanelDatos = new javax.swing.JPanel();
@@ -88,23 +99,41 @@ public class CrearPersona extends javax.swing.JDialog {
         jProfesor.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 110, 30));
 
         jLabel15.setText("Idiomas");
-        jProfesor.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
+        jProfesor.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 50, -1, -1));
 
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel16.setText("Numero telefónico");
-        jProfesor.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, -1, -1));
+        jProfesor.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, -1, -1));
 
         jLabel17.setText("Correo electrónico");
-        jProfesor.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 130, -1, -1));
+        jProfesor.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, -1, -1));
 
         jLabel18.setText("Nombre de usuario");
-        jProfesor.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 170, -1, -1));
+        jProfesor.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
 
         jTextField1.setText("jTextField1");
         jProfesor.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 240, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione la U de donde se graduó", "UNA", "UCR", "TEC", "Latina", "Hispanoamericana", "San José", "Otra" }));
         jProfesor.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 200, -1));
+
+        jTextField2.setText("jTextField2");
+        jProfesor.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 220, -1));
+
+        jTextField3.setText("jTextField3");
+        jProfesor.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 220, -1));
+
+        jTextField4.setText("jTextField4");
+        jProfesor.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, 230, -1));
+
+        jTextField5.setText("jTextField5");
+        jProfesor.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 190, -1));
+
+        jTextField6.setText("jTextField6");
+        jProfesor.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 140, 180, -1));
+
+        jTextField7.setText("jTextField7");
+        jProfesor.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 180, -1));
 
         jPanelFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -332,9 +361,11 @@ public class CrearPersona extends javax.swing.JDialog {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        comprobar();
         guardar();
         mostrarpanelmatricula();
         setTitle("Hola, " + jTFName.getText()+ ". Termine de configurar su perfil");
+        //mensajesfields();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
@@ -420,6 +451,12 @@ public class CrearPersona extends javax.swing.JDialog {
     private javax.swing.JTextField jTXCarne;
     private javax.swing.JTextField jTXages;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 
     private void redimensionar() {
@@ -453,9 +490,42 @@ jLabel1.setIcon(icon);
         if(option.equals("Profesor")){
             empezarProfesor();
         }
+        if(option.equals("Pulsa aqui y selecciona alguna de las opciones")){
+            JOptionPane.showMessageDialog(null,"Ah, excelente. Un estúpido que selecciona la opción que nos es");
+        }
+        
     }
 
     private void empezarProfesor() {
         jPanelFondo.setVisible(false);
+        jComboBox2.setSelectedIndex(0);
+    }
+
+    private void mensajesfields(JTextField Campo, String Mensaje) {
+        Campo.setText(Mensaje); 
+        
+    }
+
+    private void comprobar() {
+        String nulo = "";
+        if(jTFName.getText().equals(nulo)){
+            Unestupidoseequivoco(jLabel3,jTFName, "El primer imbecil qEue no tiene nombre. Revisalo, pedazo");
+        }
+        if(jTFA1.getText().equals(nulo)){
+            Unestupidoseequivoco(jLabel4, jTFA1, "Tu primer apellido es como mi novia (no existe). Revisa antes de enviar");
+        }
+        if(jTFA1.getText().equals(nulo)){
+            Unestupidoseequivoco(jLabel5, jTXA2, "Tu segundo apellido es como mi novia (no existe). Revisa antes de enviar");
+    }
+        if(jTFDNI.getText().equals(nulo)){
+            Unestupidoseequivoco(jLabel8, jTFDNI, "Que? No estas en el registro o que?");
+        }
+    }
+
+    private void Unestupidoseequivoco(JLabel etiqueta, JTextField CasillaEquivocada, String Mensajealestupido) {
+        int rojo = 255; int verdeazul = 0;
+        JOptionPane.showMessageDialog(null, Mensajealestupido);
+        etiqueta.setForeground(new Color(rojo,verdeazul,verdeazul));
+        CasillaEquivocada.setBorder(new CompoundBorder());
     }
 }
