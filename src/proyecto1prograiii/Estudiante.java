@@ -11,8 +11,8 @@ package proyecto1prograiii;
 public class Estudiante extends Persona{
     public String FechaIngreso = "";
     public float Promedio =0;
-    String clasesactuales[]= new String[0];
-    String MateriasPasadas[]= new String[0];
+    String clasesactuales;
+    String MateriasPasadas;
     String Descripcion = "";
     int numero = 0;
     String mails = "";
@@ -37,19 +37,19 @@ public class Estudiante extends Persona{
         this.Promedio = Promedio;
     }
 
-    public String[] getClasesactuales() {
+    public String getClasesactuales() {
         return clasesactuales;
     }
 
-    public void setClasesactuales(String[] clasesactuales) {
+    public void setClasesactuales(String clasesactuales) {
         this.clasesactuales = clasesactuales;
     }
 
-    public String[] getMateriasPasadas() {
+    public String getMateriasPasadas() {
         return MateriasPasadas;
     }
 
-    public void setMateriasPasadas(String[] MateriasPasadas) {
+    public void setMateriasPasadas(String MateriasPasadas) {
         this.MateriasPasadas = MateriasPasadas;
     }
 
