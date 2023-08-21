@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-package proyecto1prograiii;
+package proyecto1prograiii.CapaPresentacion;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -133,9 +133,9 @@ public class Gestion extends javax.swing.JDialog {
             .addGroup(jPanelGestorLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanelGestorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
-                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addComponent(jLabel1)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         jPanelGestorLayout.setVerticalGroup(
             jPanelGestorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +147,7 @@ public class Gestion extends javax.swing.JDialog {
                 .addContainerGap(392, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanelGestor, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 0, 410, -1));
+        getContentPane().add(jPanelGestor, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 0, 211, -1));
 
         jPanelProfesores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

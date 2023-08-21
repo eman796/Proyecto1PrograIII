@@ -1,4 +1,4 @@
-package proyecto1prograiii;
+package proyecto1prograiii.CapaLógica;
 
 public class Materias {
     public String Nombre = "";

@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package proyecto1prograiii;
+package proyecto1prograiii.CapaLógica;
+
+import proyecto1prograiii.CapaPresentacion.Principal;
 
 /**
  *
