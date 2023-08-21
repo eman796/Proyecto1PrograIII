@@ -19,6 +19,8 @@ public class Gestion extends javax.swing.JDialog {
     public Gestion(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        QuitarLabelfondo(jPanelEstudiantes, false);
+        QuitarFieldsEstudiantes();
     }
 
     /**
@@ -57,8 +59,41 @@ public class Gestion extends javax.swing.JDialog {
         jTextField7 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        jPanelEstudiantes = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+        jTextField18 = new javax.swing.JTextField();
+        jTextField19 = new javax.swing.JTextField();
+        jTextField20 = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -98,9 +133,9 @@ public class Gestion extends javax.swing.JDialog {
             .addGroup(jPanelGestorLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanelGestorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(12, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
+                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanelGestorLayout.setVerticalGroup(
             jPanelGestorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,7 +147,7 @@ public class Gestion extends javax.swing.JDialog {
                 .addContainerGap(392, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanelGestor, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 0, 211, -1));
+        getContentPane().add(jPanelGestor, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 0, 410, -1));
 
         jPanelProfesores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -300,12 +335,129 @@ public class Gestion extends javax.swing.JDialog {
 
         getContentPane().add(jPanelProfesores, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 507));
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEstudiantes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setText("jLabel12");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 248, 190));
+        jLabel12.setFont(new java.awt.Font("Mongolian Baiti", 0, 20)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(51, 0, 255));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Bienvenido a Gestion de alumnos. Seleccione alguno para editar sus datos");
+        jPanelEstudiantes.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 640, 40));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel13.setText("Nombre");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jLabel14.setText("Fecha de ingreso");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, -1, -1));
+
+        jLabel15.setText("Cedula");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
+
+        jLabel16.setText("Promedio");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, -1, -1));
+
+        jLabel17.setText("Carnet");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+
+        jLabel18.setText("Clases actuales");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 90, 90, -1));
+
+        jLabel19.setText("Primer Apellido");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
+
+        jLabel20.setText("Segundo Apellido");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
+
+        jLabel21.setText("Edad");
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+
+        jLabel22.setText("Materias pasadas");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+
+        jLabel23.setText("Correo");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 40, -1));
+
+        jLabel24.setText("Número telefónico");
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, -1, -1));
+
+        jButton4.setText("Actualizar");
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, -1, -1));
+
+        jButton5.setText("Eliminar");
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, -1, -1));
+
+        jButton6.setText("Cambiar vista");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, -1, -1));
+
+        jTextField9.setText("jTextField9");
+        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 110, -1));
+
+        jTextField10.setText("jTextField10");
+        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 110, -1));
+
+        jTextField11.setText("jTextField11");
+        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 110, -1));
+
+        jTextField12.setText("jTextField12");
+        jPanel1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, -1, -1));
+
+        jTextField13.setText("jTextField13");
+        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, -1));
+
+        jTextField14.setText("jTextField14");
+        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 100, -1));
+
+        jTextField15.setText("jTextField15");
+        jPanel1.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
+
+        jTextField16.setText("jTextField16");
+        jPanel1.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+
+        jTextField17.setText("jTextField17");
+        jPanel1.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
+
+        jTextField18.setText("jTextField18");
+        jPanel1.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+
+        jTextField19.setText("jTextField19");
+        jPanel1.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 190, 120, -1));
+
+        jTextField20.setText("jTextField20");
+        jPanel1.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, -1));
+
+        jLabel25.setText("Descripcion del estudiante");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 410, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane3.setViewportView(jTextArea1);
+
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 400, 130));
+
+        jPanelEstudiantes.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 420, 500));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre", "Cedula", "Carnet", "Primer Apellido","Segundo Apellido", "Edad","Fecha de ingreso","Promedio","Clases Actuales", "Materias Pasadas", "Descripcion", "numero", "Mail"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        jPanelEstudiantes.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 610, 420));
+
+        getContentPane().add(jPanelEstudiantes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -332,7 +484,11 @@ public class Gestion extends javax.swing.JDialog {
             CargardatosBasedeDatos();
         }
         if(jComboBox1.getSelectedIndex() == 2 ){
-            QuitarLabelfondo(jPanelAlumnos, true);
+            QuitarLabelfondo(jPanelEstudiantes, true);
+            QuitarLabelfondo(jPanel1, true);
+            QuitarLabelfondo(jPanelGestor, false);
+            QuitarLabelfondo(jPanelFondo, false);
+            QuitarLabelfondo(jPanelProfesores, false);
         }
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -342,6 +498,12 @@ public class Gestion extends javax.swing.JDialog {
         QuitarLabelfondo(jPanelEdicion, false);
         QuitarLabelfondo(jPanelGestor, true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        QuitarLabelfondo(jPanel1 , false);
+        QuitarLabelfondo(jPanelGestor, true);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -389,12 +551,28 @@ public class Gestion extends javax.swing.JDialog {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -405,23 +583,38 @@ public class Gestion extends javax.swing.JDialog {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanelAlumnos;
-    private javax.swing.JPanel jPanelAlumnos1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelEdicion;
+    private javax.swing.JPanel jPanelEstudiantes;
     private javax.swing.JPanel jPanelFondo;
     private javax.swing.JPanel jPanelGestor;
     private javax.swing.JPanel jPanelProfesores;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTableProfesor;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 
     private void QuitarLabelfondo(JPanel panel, boolean siono) {
@@ -431,4 +624,20 @@ public class Gestion extends javax.swing.JDialog {
     private void CargardatosBasedeDatos() {
         //Franco o Harold, este método trae los datos de la base de datos. La idea es que, cuando yo seleccione Profesor, esa tabla obtenga los datos de la base de datos
     }
+
+    private void QuitarFieldsEstudiantes() {
+       jTextField9.setText("");
+       jTextField10.setText("");
+       jTextField11.setText("");
+       jTextField12.setText("");
+       jTextField13.setText("");
+       jTextField14.setText("");
+       jTextField15.setText("");
+       jTextField16.setText("");
+       jTextField17.setText("");
+       jTextField18.setText("");
+       jTextField19.setText("");
+       jTextField20.setText("");
+    }
+    
 }

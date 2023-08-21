@@ -55,11 +55,11 @@ public class CrearPersona extends javax.swing.JDialog {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
+        jButtonGuardar = new javax.swing.JButton();
         jPanelFondo = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanelDatos = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -74,6 +74,24 @@ public class CrearPersona extends javax.swing.JDialog {
         jTFDNI = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jFI = new javax.swing.JTextField();
+        jPromedio = new javax.swing.JTextField();
+        jClasesActuales = new javax.swing.JTextField();
+        jNumero = new javax.swing.JTextField();
+        jCorreo = new javax.swing.JTextField();
+        jMateriasPasadas = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jDescripcion = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -135,10 +153,18 @@ public class CrearPersona extends javax.swing.JDialog {
         jTextField7.setText("jTextField7");
         jProfesor.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 180, -1));
 
+        jButtonGuardar.setText("Guardar Datos");
+        jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGuardarActionPerformed(evt);
+            }
+        });
+        jProfesor.add(jButtonGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, -1, -1));
+
         jPanelFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/CrearPersona.jpg"))); // NOI18N
-        jPanelFondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 780, 530));
+        jPanelFondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 550));
 
         jPanelDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -147,14 +173,6 @@ public class CrearPersona extends javax.swing.JDialog {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Matricula de esta prestigiosa Universidad");
         jPanelDatos.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 16, 218, -1));
-
-        jButton1.setText("Guardar Datos");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanelDatos.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 458, -1, -1));
 
         jLabel3.setText("Nombre");
         jPanelDatos.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 60, 58, -1));
@@ -256,7 +274,73 @@ public class CrearPersona extends javax.swing.JDialog {
         jPanelDatos.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 297, -1, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pulsa aqui y selecciona alguna de las opciones", "Profesor", "Alumno" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         jPanelDatos.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 319, 218, -1));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 0, 153));
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("Bienvenido al panel de creacion de alumnos");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 790, 120));
+
+        jLabel20.setText("Fecha de ingreso");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel21.setText("Promedio");
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+
+        jLabel22.setText("Clases actuales");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+
+        jLabel23.setText("Materias pasadas");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, -1, -1));
+
+        jLabel24.setText("Numero");
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 190, -1, -1));
+
+        jLabel25.setText("Correo");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 240, -1, -1));
+
+        jFI.setText("jTextField8");
+        jPanel1.add(jFI, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 250, -1));
+
+        jPromedio.setText("jTextField9");
+        jPanel1.add(jPromedio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 250, -1));
+
+        jClasesActuales.setText("jTextField10");
+        jPanel1.add(jClasesActuales, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 250, -1));
+
+        jNumero.setText("jTextField11");
+        jPanel1.add(jNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, 240, -1));
+
+        jCorreo.setText("jTextField11");
+        jPanel1.add(jCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 240, -1));
+
+        jMateriasPasadas.setText("jTextField11");
+        jPanel1.add(jMateriasPasadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 240, -1));
+
+        jLabel26.setText("Descripción");
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+
+        jDescripcion.setColumns(20);
+        jDescripcion.setRows(5);
+        jScrollPane1.setViewportView(jDescripcion);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 560, -1));
+
+        jButton1.setText("Guardar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, -1, -1));
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -281,8 +365,12 @@ public class CrearPersona extends javax.swing.JDialog {
                 .addComponent(jPanelFondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 230, Short.MAX_VALUE)
+                    .addGap(0, 240, Short.MAX_VALUE)
                     .addComponent(jProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGap(0, 230, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 790, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -293,6 +381,8 @@ public class CrearPersona extends javax.swing.JDialog {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 552, Short.MAX_VALUE))
         );
 
         pack();
@@ -359,20 +449,26 @@ public class CrearPersona extends javax.swing.JDialog {
          
     }//GEN-LAST:event_jTFDNIMouseClicked
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
         // TODO add your handling code here:
-        comprobar();
+        comprobar(1);
         guardar();
-        mostrarpanelmatricula();
-        setTitle("Hola, " + jTFName.getText()+ ". Termine de configurar su perfil");
         //mensajesfields();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonGuardarActionPerformed
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
     }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+     Combobox();   // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -418,8 +514,13 @@ public class CrearPersona extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonGuardar;
+    private javax.swing.JTextField jClasesActuales;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JTextField jCorreo;
+    private javax.swing.JTextArea jDescripcion;
+    private javax.swing.JTextField jFI;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -430,7 +531,15 @@ public class CrearPersona extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -438,12 +547,17 @@ public class CrearPersona extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jMateriasPasadas;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JTextField jNumero;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelDatos;
     private javax.swing.JPanel jPanelFondo;
     private javax.swing.JPanel jProfesor;
+    private javax.swing.JTextField jPromedio;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTFA1;
     private javax.swing.JTextField jTFDNI;
     private javax.swing.JTextField jTFName;
@@ -480,18 +594,20 @@ jLabel1.setIcon(icon);
     }
 
     private void guardar() {
-        //Franco o Harold, no sé quien va a hacer el Backend, pero aqui va el método que guarda los datos
+        //Franco o Harold, no sé quien va a hacer el Backend, pero aqui va el método que guarda los datos a la base de datos.
         
     }
 
-    private void mostrarpanelmatricula() {
-        Object Opcion = jComboBox1.getSelectedItem();
-        String option = (String) Opcion;
-        if(option.equals("Profesor")){
+    private void Combobox() {
+        if(jComboBox1.getSelectedIndex() == 1 ){
             empezarProfesor();
+            setTitle("Hola, " + jTFName.getText()+ ". Termine de configurar su perfil");
         }
-        if(option.equals("Pulsa aqui y selecciona alguna de las opciones")){
+        if(jComboBox1.getSelectedIndex() ==0){
             JOptionPane.showMessageDialog(null,"Ah, excelente. Un estúpido que selecciona la opción que nos es");
+        }
+        if(jComboBox1.getSelectedIndex()==2){
+            EmpezarAlumno();
         }
         
     }
@@ -499,6 +615,8 @@ jLabel1.setIcon(icon);
     private void empezarProfesor() {
         jPanelFondo.setVisible(false);
         jComboBox2.setSelectedIndex(0);
+        jPanel1.setVisible(false);
+        jProfesor.setVisible(true);
     }
 
     private void mensajesfields(JTextField Campo, String Mensaje) {
@@ -506,8 +624,11 @@ jLabel1.setIcon(icon);
         
     }
 
-    private void comprobar() {
-        String nulo = "";
+    private void comprobar(int profeoest) {
+        
+        
+        if(profeoest ==1){//Seleccionamos si es profe o no
+            String nulo = "";
         if(jTFName.getText().equals(nulo)){
             Unestupidoseequivoco(jLabel3,jTFName, "El primer imbecil qEue no tiene nombre. Revisalo, pedazo");
         }
@@ -520,6 +641,20 @@ jLabel1.setIcon(icon);
         if(jTFDNI.getText().equals(nulo)){
             Unestupidoseequivoco(jLabel8, jTFDNI, "Que? No estas en el registro o que?");
         }
+        if(jTXages.getText().equals(nulo)){
+            Unestupidoseequivoco(jLabel16, jTXages ,"Que? aun estas en el utero de tu mamá?");
+        }
+        comprobarint(jTXages);
+        comprobarint(jTXCarne);
+        comprobarint(jTXCarne);
+        if(jFI.getText().equals(nulo)){
+            JOptionPane.showMessageDialog(null, "Parece que el alumno ni se ha matriculado, porque no diste fecha de ingreso, animal");
+        }
+    } else{
+            if(profeoest ==2){//Seleccionamos que queremos aplicar esto en estudiantes
+                //Poner aqui los errores de estudiantes
+            }
+        }
     }
 
     private void Unestupidoseequivoco(JLabel etiqueta, JTextField CasillaEquivocada, String Mensajealestupido) {
@@ -528,4 +663,28 @@ jLabel1.setIcon(icon);
         etiqueta.setForeground(new Color(rojo,verdeazul,verdeazul));
         CasillaEquivocada.setBorder(new CompoundBorder());
     }
+
+    private void EmpezarAlumno() {
+        jPanel1.setVisible(true);
+        jPanelFondo.setVisible(false);
+        jProfesor.setVisible(false);
+    }
+
+    private void comprobarint(JTextField mensajeacomprobar) {
+        if(isNumeric(mensajeacomprobar.getText())){
+            System.out.println("No se ha equivocado");
+            
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "No sabia que "+mensajeacomprobar.getText()+" era un numero, pero bueno. Talvez y lo corregis, animal");
+        }
+    }
+    public static boolean isNumeric(String str) {
+    try {
+        Integer.parseInt(str);
+        return true;
+    } catch (NumberFormatException e) {
+        return false;
+    }
+}
 }
