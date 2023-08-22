@@ -17,9 +17,19 @@ public class Estudiante extends Persona{
     int numero = 0;
     String mails = "";
 
-    public Estudiante(String nombre, int Cedula, int carnet, String A1, String A2, int edad) {
+    public Estudiante(String clasesactuales, String MateriasPasadas, String nombre, int Cedula, int carnet, String A1, String A2, int edad, float Promedio, String Descripcion, int Numero, String Correo) {
         super(nombre, Cedula, carnet, A1, A2, edad);
+        this.clasesactuales = clasesactuales;
+        this.MateriasPasadas = MateriasPasadas;
+        this.numero = Numero;
+        this.FechaIngreso = FechaIngreso;
+        this.Promedio = Promedio;
+        this.Descripcion = Descripcion;
+        this.mails = Correo;
     }
+
+
+    
 
     public String getFechaIngreso() {
         return FechaIngreso;

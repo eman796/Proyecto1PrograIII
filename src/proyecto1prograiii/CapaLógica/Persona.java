@@ -9,8 +9,8 @@ package proyecto1prograiii.CapaLógica;
  * @author emanu
  */
 public class Persona {
-    String Nombre = "";
     int Cedula = 0;
+    String Nombre = "";
     int Carnet = 0;
     String Apellido = "";
     String Apellido2 = "";
