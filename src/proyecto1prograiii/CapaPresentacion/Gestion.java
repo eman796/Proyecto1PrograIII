@@ -20,7 +20,7 @@ public class Gestion extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         QuitarLabelfondo(jPanelEstudiantes, false);
-        QuitarFieldsEstudiantes();
+        QuitarFields();
     }
 
     /**
@@ -44,21 +44,41 @@ public class Gestion extends javax.swing.JDialog {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jTextField22 = new javax.swing.JTextField();
+        jTextField23 = new javax.swing.JTextField();
+        jTextField24 = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField25 = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        jTextField26 = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField27 = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jTextField28 = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        jTextField29 = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jTextField30 = new javax.swing.JTextField();
         jPanelEstudiantes = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -164,7 +184,7 @@ public class Gestion extends javax.swing.JDialog {
         ));
         jScrollPane1.setViewportView(jTableProfesor);
 
-        jPanelProfesores.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 59, 645, 379));
+        jPanelProfesores.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 59, 645, 360));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Historic", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 51, 255));
@@ -172,43 +192,45 @@ public class Gestion extends javax.swing.JDialog {
         jLabel2.setText("Tabla para ver profesores");
         jPanelProfesores.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 645, 35));
 
+        jPanelEdicion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel3.setText("Menu para editar profesores");
+        jPanelEdicion.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 33, -1, -1));
 
         jLabel4.setText("Profesion");
+        jPanelEdicion.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 73, -1, -1));
 
-        jLabel5.setText("Universidad de egresión");
+        jLabel5.setText("U de egresión");
+        jPanelEdicion.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 113, -1, -1));
 
-        jLabel6.setText("Clasees impartidas");
+        jLabel6.setText("Clases impartidas");
+        jPanelEdicion.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, -1));
 
         jLabel7.setText("Años de experiencia");
-
-        jLabel8.setText("Idiomas");
-
-        jLabel9.setText("Numero");
-
-        jLabel10.setText("Correo");
-
-        jLabel11.setText("jLabel11");
+        jPanelEdicion.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, -1, -1));
 
         jButton2.setText("Eliminar");
+        jPanelEdicion.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 433, -1, -1));
 
         jButton3.setText("Actualizar");
+        jPanelEdicion.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, -1, -1));
 
         jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanelEdicion.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 73, 130, -1));
 
         jTextField2.setText("jTextField2");
+        jPanelEdicion.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 110, 120, -1));
 
         jTextField3.setText("jTextField3");
+        jPanelEdicion.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 163, 110, -1));
 
         jTextField4.setText("jTextField4");
-
-        jTextField5.setText("jTextField5");
-
-        jTextField6.setText("jTextField6");
-
-        jTextField7.setText("jTextField7");
-
-        jTextField8.setText("jTextField8");
+        jPanelEdicion.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 203, 90, -1));
 
         jButton1.setText("Intercambiar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -216,122 +238,93 @@ public class Gestion extends javax.swing.JDialog {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanelEdicion.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 461, -1, -1));
 
-        javax.swing.GroupLayout jPanelEdicionLayout = new javax.swing.GroupLayout(jPanelEdicion);
-        jPanelEdicion.setLayout(jPanelEdicionLayout);
-        jPanelEdicionLayout.setHorizontalGroup(
-            jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(jButton1)
-                .addContainerGap(52, Short.MAX_VALUE))
-            .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addComponent(jLabel3))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel4)
-                            .addGap(70, 70, 70)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addComponent(jLabel5)
-                            .addGap(4, 4, 4)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel6)
-                            .addGap(22, 22, 22)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel7)
-                            .addGap(14, 14, 14)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel8)
-                            .addGap(78, 78, 78)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel9)
-                            .addGap(76, 76, 76)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel10)
-                            .addGap(84, 84, 84)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel11)
-                            .addGap(77, 77, 77)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jButton2)
-                            .addGap(27, 27, 27)
-                            .addComponent(jButton3)))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        jPanelEdicionLayout.setVerticalGroup(
-            jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEdicionLayout.createSequentialGroup()
-                .addContainerGap(461, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
-            .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                    .addGap(0, 33, Short.MAX_VALUE)
-                    .addComponent(jLabel3)
-                    .addGap(24, 24, 24)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel4)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(18, 18, 18)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel5)
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(18, 18, 18)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel6)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(18, 18, 18)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel7)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(18, 18, 18)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanelEdicionLayout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel8))
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(34, 34, 34)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel9)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(28, 28, 28)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel10)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(28, 28, 28)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel11)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(8, 8, 8)
-                    .addGroup(jPanelEdicionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton2)
-                        .addComponent(jButton3))
-                    .addGap(0, 34, Short.MAX_VALUE)))
-        );
+        jTextField8.setText("jTextField8");
+        jPanelEdicion.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 210, -1, -1));
 
-        jPanelProfesores.add(jPanelEdicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, -1, 490));
+        jLabel11.setText("UserName");
+        jPanelEdicion.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 210, -1, -1));
+
+        jTextField7.setText("jTextField7");
+        jPanelEdicion.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, -1, -1));
+
+        jLabel10.setText("Correo");
+        jPanelEdicion.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 170, -1, -1));
+
+        jLabel9.setText("Numero");
+        jPanelEdicion.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 130, -1, -1));
+
+        jTextField6.setText("jTextField6");
+        jPanelEdicion.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, -1, -1));
+
+        jTextField5.setText("jTextField5");
+        jPanelEdicion.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 80, -1, -1));
+
+        jLabel8.setText("Idiomas");
+        jPanelEdicion.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 80, -1, -1));
+
+        jLabel26.setText("Idiomas");
+        jPanelEdicion.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, -1, -1));
+
+        jLabel27.setText("Numero");
+        jPanelEdicion.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, -1, -1));
+
+        jLabel28.setText("Correo");
+        jPanelEdicion.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, -1, -1));
+
+        jLabel29.setText("Username");
+        jPanelEdicion.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, -1, -1));
+
+        jTextField21.setText("jTextField21");
+        jPanelEdicion.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 240, 160, -1));
+
+        jTextField22.setText("jTextField22");
+        jPanelEdicion.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 150, -1));
+
+        jTextField23.setText("jTextField23");
+        jPanelEdicion.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 160, -1));
+
+        jTextField24.setText("jTextField24");
+        jPanelEdicion.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 150, -1));
+
+        jPanelProfesores.add(jPanelEdicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 220, 500));
+
+        jLabel30.setText("Nombre:");
+        jPanelProfesores.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, -1, -1));
+
+        jTextField25.setText("jTextField25");
+        jPanelProfesores.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 110, -1));
+
+        jLabel31.setText("Cedula");
+        jPanelProfesores.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, -1, -1));
+
+        jTextField26.setText("jTextField26");
+        jPanelProfesores.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 100, -1));
+
+        jLabel32.setText("Carne");
+        jPanelProfesores.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, 80, -1));
+
+        jTextField27.setText("jTextField27");
+        jPanelProfesores.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 430, 120, -1));
+
+        jLabel33.setText("Primer Apellido");
+        jPanelProfesores.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, -1, -1));
+
+        jTextField28.setText("jTextField28");
+        jPanelProfesores.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, 140, -1));
+
+        jLabel34.setText("Segundo Apellido");
+        jPanelProfesores.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 460, -1, -1));
+
+        jTextField29.setText("jTextField29");
+        jPanelProfesores.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 140, -1));
+
+        jLabel35.setText("Edad:");
+        jPanelProfesores.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 80, -1));
+
+        jTextField30.setText("jTextField30");
+        jPanelProfesores.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 460, -1, -1));
 
         getContentPane().add(jPanelProfesores, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 507));
 
@@ -361,7 +354,7 @@ public class Gestion extends javax.swing.JDialog {
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
         jLabel18.setText("Clases actuales");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 90, 90, -1));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 90, 90, -1));
 
         jLabel19.setText("Primer Apellido");
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
@@ -373,7 +366,7 @@ public class Gestion extends javax.swing.JDialog {
         jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
         jLabel22.setText("Materias pasadas");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
         jLabel23.setText("Correo");
         jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 40, -1));
@@ -396,40 +389,40 @@ public class Gestion extends javax.swing.JDialog {
         jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, -1, -1));
 
         jTextField9.setText("jTextField9");
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 110, -1));
+        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 120, -1));
 
         jTextField10.setText("jTextField10");
-        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 110, -1));
+        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 120, -1));
 
         jTextField11.setText("jTextField11");
-        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 110, -1));
+        jPanel1.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 120, -1));
 
         jTextField12.setText("jTextField12");
-        jPanel1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, -1, -1));
+        jPanel1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 90, -1));
 
         jTextField13.setText("jTextField13");
-        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, -1));
+        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 90, -1));
 
         jTextField14.setText("jTextField14");
-        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 100, -1));
+        jPanel1.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 110, -1));
 
         jTextField15.setText("jTextField15");
-        jPanel1.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
+        jPanel1.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 100, -1));
 
         jTextField16.setText("jTextField16");
-        jPanel1.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+        jPanel1.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 100, -1));
 
         jTextField17.setText("jTextField17");
-        jPanel1.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
+        jPanel1.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 100, -1));
 
         jTextField18.setText("jTextField18");
-        jPanel1.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+        jPanel1.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 100, -1));
 
         jTextField19.setText("jTextField19");
-        jPanel1.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 190, 120, -1));
+        jPanel1.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 140, -1));
 
         jTextField20.setText("jTextField20");
-        jPanel1.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, -1, -1));
+        jPanel1.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 100, -1));
 
         jLabel25.setText("Descripcion del estudiante");
         jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 410, -1));
@@ -482,6 +475,7 @@ public class Gestion extends javax.swing.JDialog {
             QuitarLabelfondo(jPanelEdicion, true);
             QuitarLabelfondo(jPanelGestor, false);
             CargardatosBasedeDatos();
+            
         }
         if(jComboBox1.getSelectedIndex() == 2 ){
             QuitarLabelfondo(jPanelEstudiantes, true);
@@ -489,6 +483,7 @@ public class Gestion extends javax.swing.JDialog {
             QuitarLabelfondo(jPanelGestor, false);
             QuitarLabelfondo(jPanelFondo, false);
             QuitarLabelfondo(jPanelProfesores, false);
+            
         }
         
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -504,6 +499,10 @@ public class Gestion extends javax.swing.JDialog {
         QuitarLabelfondo(jPanel1 , false);
         QuitarLabelfondo(jPanelGestor, true);
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -573,7 +572,17 @@ public class Gestion extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -608,7 +617,17 @@ public class Gestion extends javax.swing.JDialog {
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField28;
+    private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
@@ -625,7 +644,11 @@ public class Gestion extends javax.swing.JDialog {
         //Franco o Harold, este método trae los datos de la base de datos. La idea es que, cuando yo seleccione Profesor, esa tabla obtenga los datos de la base de datos
     }
 
-    private void QuitarFieldsEstudiantes() {
+    private void QuitarFields() {
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
        jTextField9.setText("");
        jTextField10.setText("");
        jTextField11.setText("");
@@ -638,6 +661,16 @@ public class Gestion extends javax.swing.JDialog {
        jTextField18.setText("");
        jTextField19.setText("");
        jTextField20.setText("");
+       jTextField21.setText("");
+       jTextField22.setText("");
+       jTextField23.setText("");
+       jTextField24.setText("");
+       jTextField25.setText("");
+       jTextField26.setText("");
+       jTextField27.setText("");
+       jTextField28.setText("");
+       jTextField29.setText("");
+       jTextField30.setText("");
     }
     
 }

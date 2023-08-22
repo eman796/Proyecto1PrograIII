@@ -27,7 +27,9 @@ public class CrearPersona extends javax.swing.JDialog {
         initComponents();
         setTitle("Añadir nueva Persona");
         redimensionar();
-        EmpezarTextfields("Pulsa aqui para guardar tu nombre", "Pulsa aqui para guardar tu primer apellido", "Pulsa aqui para guardar tu segundo apellido", "Aqui va tu Carne", "Aqui pones que tan viejo estas","Aqui pones tu DNI, apenas para ir a verte en el Regiistro civil" );
+        Empezar();
+
+        
     }
 
     /**
@@ -91,7 +93,7 @@ public class CrearPersona extends javax.swing.JDialog {
         jLabel26 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jDescripcion = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        jGuardar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -124,33 +126,103 @@ public class CrearPersona extends javax.swing.JDialog {
         jProfesor.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, -1, -1));
 
         jLabel17.setText("Correo electrónico");
-        jProfesor.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, -1, -1));
+        jProfesor.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 140, -1, -1));
 
         jLabel18.setText("Nombre de usuario");
-        jProfesor.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
+        jProfesor.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, -1, -1));
 
         jTextField1.setText("jTextField1");
+        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField1MouseClicked(evt);
+            }
+        });
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         jProfesor.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 240, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione la U de donde se graduó", "UNA", "UCR", "TEC", "Latina", "Hispanoamericana", "San José", "Otra" }));
         jProfesor.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 200, -1));
 
         jTextField2.setText("jTextField2");
+        jTextField2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField2MouseClicked(evt);
+            }
+        });
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
         jProfesor.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 220, -1));
 
         jTextField3.setText("jTextField3");
-        jProfesor.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 220, -1));
+        jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField3MouseClicked(evt);
+            }
+        });
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        jProfesor.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 220, -1));
 
         jTextField4.setText("jTextField4");
+        jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField4MouseClicked(evt);
+            }
+        });
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
         jProfesor.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, 230, -1));
 
         jTextField5.setText("jTextField5");
+        jTextField5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField5MouseClicked(evt);
+            }
+        });
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
         jProfesor.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 190, -1));
 
         jTextField6.setText("jTextField6");
+        jTextField6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField6MouseClicked(evt);
+            }
+        });
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
         jProfesor.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 140, 180, -1));
 
         jTextField7.setText("jTextField7");
+        jTextField7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField7MouseClicked(evt);
+            }
+        });
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
         jProfesor.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 180, -1));
 
         jButtonGuardar.setText("Guardar Datos");
@@ -177,10 +249,10 @@ public class CrearPersona extends javax.swing.JDialog {
         jLabel3.setText("Nombre");
         jPanelDatos.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 60, 58, -1));
 
-        jLabel4.setText("Primer Apellido:");
+        jLabel4.setText("Apellido 1:");
         jPanelDatos.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 97, -1, -1));
 
-        jLabel5.setText("Segundo Apelllido");
+        jLabel5.setText("Apellido 2:");
         jPanelDatos.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 137, -1, -1));
 
         jLabel6.setText("Edad");
@@ -203,7 +275,7 @@ public class CrearPersona extends javax.swing.JDialog {
                 jTFNameActionPerformed(evt);
             }
         });
-        jPanelDatos.add(jTFName, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 57, -1, -1));
+        jPanelDatos.add(jTFName, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 57, 160, -1));
 
         jTFA1.setText("jTextField1");
         jTFA1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -216,7 +288,7 @@ public class CrearPersona extends javax.swing.JDialog {
                 jTFA1ActionPerformed(evt);
             }
         });
-        jPanelDatos.add(jTFA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 97, -1, -1));
+        jPanelDatos.add(jTFA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 97, 150, -1));
 
         jTXA2.setText("jTextField3");
         jTXA2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -229,7 +301,7 @@ public class CrearPersona extends javax.swing.JDialog {
                 jTXA2ActionPerformed(evt);
             }
         });
-        jPanelDatos.add(jTXA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 137, -1, -1));
+        jPanelDatos.add(jTXA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 150, -1));
 
         jTXages.setText("jTextField4");
         jTXages.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -242,7 +314,7 @@ public class CrearPersona extends javax.swing.JDialog {
                 jTXagesActionPerformed(evt);
             }
         });
-        jPanelDatos.add(jTXages, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 177, -1, -1));
+        jPanelDatos.add(jTXages, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 180, -1));
 
         jTXCarne.setText("jTextField5");
         jTXCarne.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -255,7 +327,7 @@ public class CrearPersona extends javax.swing.JDialog {
                 jTXCarneActionPerformed(evt);
             }
         });
-        jPanelDatos.add(jTXCarne, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 217, -1, -1));
+        jPanelDatos.add(jTXCarne, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 160, -1));
 
         jTFDNI.setText("jTextField6");
         jTFDNI.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -268,7 +340,7 @@ public class CrearPersona extends javax.swing.JDialog {
                 jTFDNIActionPerformed(evt);
             }
         });
-        jPanelDatos.add(jTFDNI, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 257, -1, -1));
+        jPanelDatos.add(jTFDNI, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 257, 170, -1));
 
         jLabel9.setText("Tipo de persona a matricular:");
         jPanelDatos.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 297, -1, -1));
@@ -308,21 +380,81 @@ public class CrearPersona extends javax.swing.JDialog {
         jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 240, -1, -1));
 
         jFI.setText("jTextField8");
+        jFI.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jFIMouseClicked(evt);
+            }
+        });
+        jFI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFIActionPerformed(evt);
+            }
+        });
         jPanel1.add(jFI, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 250, -1));
 
         jPromedio.setText("jTextField9");
+        jPromedio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPromedioMouseClicked(evt);
+            }
+        });
+        jPromedio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPromedioActionPerformed(evt);
+            }
+        });
         jPanel1.add(jPromedio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 250, -1));
 
         jClasesActuales.setText("jTextField10");
+        jClasesActuales.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jClasesActualesMouseClicked(evt);
+            }
+        });
+        jClasesActuales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jClasesActualesActionPerformed(evt);
+            }
+        });
         jPanel1.add(jClasesActuales, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 250, -1));
 
         jNumero.setText("jTextField11");
+        jNumero.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jNumeroMouseClicked(evt);
+            }
+        });
+        jNumero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jNumeroActionPerformed(evt);
+            }
+        });
         jPanel1.add(jNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, 240, -1));
 
         jCorreo.setText("jTextField11");
+        jCorreo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCorreoMouseClicked(evt);
+            }
+        });
+        jCorreo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCorreoActionPerformed(evt);
+            }
+        });
         jPanel1.add(jCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 240, -1));
 
         jMateriasPasadas.setText("jTextField11");
+        jMateriasPasadas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMateriasPasadasMouseClicked(evt);
+            }
+        });
+        jMateriasPasadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMateriasPasadasActionPerformed(evt);
+            }
+        });
         jPanel1.add(jMateriasPasadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 240, -1));
 
         jLabel26.setText("Descripción");
@@ -330,17 +462,31 @@ public class CrearPersona extends javax.swing.JDialog {
 
         jDescripcion.setColumns(20);
         jDescripcion.setRows(5);
+        jDescripcion.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jDescripcionAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jDescripcion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jDescripcionMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jDescripcion);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 560, -1));
 
-        jButton1.setText("Guardar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jGuardar.setText("Guardar");
+        jGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jGuardarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, -1, -1));
+        jPanel1.add(jGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, -1, -1));
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -466,9 +612,149 @@ public class CrearPersona extends javax.swing.JDialog {
      Combobox();   // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jGuardarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jGuardarActionPerformed
+
+    private void jPromedioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPromedioActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField1);
+    }//GEN-LAST:event_jPromedioActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField1);
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField2);
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField3);
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField4);
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField5);
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField6);
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField7);
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jFIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFIActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jFI);
+    }//GEN-LAST:event_jFIActionPerformed
+
+    private void jClasesActualesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jClasesActualesActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jClasesActuales);
+    }//GEN-LAST:event_jClasesActualesActionPerformed
+
+    private void jMateriasPasadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMateriasPasadasActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jMateriasPasadas);
+    }//GEN-LAST:event_jMateriasPasadasActionPerformed
+
+    private void jNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNumeroActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jNumero);
+    }//GEN-LAST:event_jNumeroActionPerformed
+
+    private void jCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCorreoActionPerformed
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jCorreo);
+    }//GEN-LAST:event_jCorreoActionPerformed
+
+    private void jDescripcionAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jDescripcionAncestorAdded
+        // TODO add your handling code here:
+        jDescripcion.setText("");
+    }//GEN-LAST:event_jDescripcionAncestorAdded
+
+    private void jFIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jFIMouseClicked
+        cerrarjTextfielsds(jFI);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFIMouseClicked
+
+    private void jPromedioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPromedioMouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jPromedio);
+    }//GEN-LAST:event_jPromedioMouseClicked
+
+    private void jClasesActualesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jClasesActualesMouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jClasesActuales);
+    }//GEN-LAST:event_jClasesActualesMouseClicked
+
+    private void jMateriasPasadasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMateriasPasadasMouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jMateriasPasadas);
+    }//GEN-LAST:event_jMateriasPasadasMouseClicked
+
+    private void jNumeroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jNumeroMouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jNumero);
+    }//GEN-LAST:event_jNumeroMouseClicked
+
+    private void jCorreoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCorreoMouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jCorreo);
+    }//GEN-LAST:event_jCorreoMouseClicked
+
+    private void jDescripcionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jDescripcionMouseClicked
+        // TODO add your handling code here:
+        jDescripcion.setText("");
+    }//GEN-LAST:event_jDescripcionMouseClicked
+
+    private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField1);
+    }//GEN-LAST:event_jTextField1MouseClicked
+
+    private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField2);
+    }//GEN-LAST:event_jTextField2MouseClicked
+
+    private void jTextField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField3);
+    }//GEN-LAST:event_jTextField3MouseClicked
+
+    private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField4);
+    }//GEN-LAST:event_jTextField4MouseClicked
+
+    private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField5);
+    }//GEN-LAST:event_jTextField5MouseClicked
+
+    private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField6);
+    }//GEN-LAST:event_jTextField6MouseClicked
+
+    private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
+        // TODO add your handling code here:
+        cerrarjTextfielsds(jTextField7);
+    }//GEN-LAST:event_jTextField7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -513,7 +799,6 @@ public class CrearPersona extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonGuardar;
     private javax.swing.JTextField jClasesActuales;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -521,6 +806,7 @@ public class CrearPersona extends javax.swing.JDialog {
     private javax.swing.JTextField jCorreo;
     private javax.swing.JTextArea jDescripcion;
     private javax.swing.JTextField jFI;
+    private javax.swing.JButton jGuardar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -581,16 +867,9 @@ jLabel1.setIcon(icon);
 
     }
 
-    private void EmpezarTextfields(String Mensaje1, String Mensaje2, String Mensaje3, String Mensaje4, String Mensaje5, String Mensaje6) {
-        jTFName.setText(Mensaje1);
-        jTFA1.setText(Mensaje2);
-        jTXA2.setText(Mensaje3);
-        jTFDNI.setText(Mensaje6);
-        jTXages.setText(Mensaje4);
-        jTXCarne.setText(Mensaje5);
-    }
     private void cerrarjTextfielsds(JTextField componente){
         componente.setText("");
+        componente.setForeground(new Color(0,0,0));
     }
 
     private void guardar() {
@@ -602,12 +881,30 @@ jLabel1.setIcon(icon);
         if(jComboBox1.getSelectedIndex() == 1 ){
             empezarProfesor();
             setTitle("Hola, " + jTFName.getText()+ ". Termine de configurar su perfil");
+            mensajesfields(jTextField1, "A que se dedica eeste profe?");
+            jComboBox2.setSelectedIndex(0);
+            mensajesfields(jTextField2, "Que clases dara eeste profe?");
+            mensajesfields(jTextField3, "Cuantos años lleva laburando?");
+            mensajesfields(jTextField4, "이 선생님은 한국어를 아십니까?");
+            mensajesfields(jTextField5, "El +506 del profe");
+            mensajesfields(jTextField6, "Cual es el @ulatina.net del profe");
+            mensajesfields(jTextField7, "El Username (Nombre de Usuario)");
         }
         if(jComboBox1.getSelectedIndex() ==0){
             JOptionPane.showMessageDialog(null,"Ah, excelente. Un estúpido que selecciona la opción que nos es");
         }
         if(jComboBox1.getSelectedIndex()==2){
             EmpezarAlumno();
+            mensajesfields(jFI, "Aqui va la fecha de ingreso");
+            mensajesfields(jPromedio, "Promedio del estudiante");
+            mensajesfields(jClasesActuales, "Clases que lleva");
+            mensajesfields(jMateriasPasadas, "Materias con promedio +70");
+            mensajesfields(jNumero, "Numero telefonico");
+            mensajesfields(jCorreo, "Correo personal del estudiante");
+            jDescripcion.setText("Aqui dice que el estudiante es negro");
+            jDescripcion.setForeground(Color.BLUE);
+
+            
         }
         
     }
@@ -621,6 +918,7 @@ jLabel1.setIcon(icon);
 
     private void mensajesfields(JTextField Campo, String Mensaje) {
         Campo.setText(Mensaje); 
+        Campo.setForeground(Color.BLUE);
         
     }
 
@@ -661,7 +959,7 @@ jLabel1.setIcon(icon);
         int rojo = 255; int verdeazul = 0;
         JOptionPane.showMessageDialog(null, Mensajealestupido);
         etiqueta.setForeground(new Color(rojo,verdeazul,verdeazul));
-        CasillaEquivocada.setBorder(new CompoundBorder());
+        
     }
 
     private void EmpezarAlumno() {
@@ -679,7 +977,7 @@ jLabel1.setIcon(icon);
             JOptionPane.showMessageDialog(null, "No sabia que "+mensajeacomprobar.getText()+" era un numero, pero bueno. Talvez y lo corregis, animal");
         }
     }
-    public static boolean isNumeric(String str) {
+    public static boolean isNumeric(String str) {//Comprobamos si un dato ingresado es entero
     try {
         Integer.parseInt(str);
         return true;
@@ -687,4 +985,17 @@ jLabel1.setIcon(icon);
         return false;
     }
 }
+
+    private void Empezar() {
+        mensajesfields(jTFName, "Digite su nombre");
+        mensajesfields(jTFA1, "Digita tu primer apellido");
+        mensajesfields(jTXA2, "Segundo apéllido aqui");
+        mensajesfields(jTXages, "Tu vejez, digo, edad");
+        mensajesfields(jTXCarne, "Tu carne universitario");
+        mensajesfields(jTFDNI, "Tu cedula");
+    }
+
+  
+    
+
 }

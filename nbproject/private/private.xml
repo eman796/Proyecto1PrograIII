@@ -4,7 +4,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaDatos/EstudianteDA.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaLógica/Proyecto1PrograIII.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaLógica/Persona.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaLógica/Materias.java</file>
             <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaDatos/ConexionBD.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaPresentacion/Principal.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaDatos/ProfesorDA.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaLógica/Estudiante.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaDatos/IPersona.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaLógica/Profesores.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaPresentacion/CrearPersona.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaPresentacion/Gestion.java</file>
+            <file>file:/C:/Users/emanu/OneDrive/Personal/Documentos%20de%20Microsoft%20Word/Documents/NetBeansProjects/Proyecto1PrograIII/Proyecto1PrograIII/src/proyecto1prograiii/CapaLógica/Clases.java</file>
         </group>
     </open-files>
 </project-private>
